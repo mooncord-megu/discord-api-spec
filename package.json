@@ -1,0 +1,22 @@
+{
+	"name": "discord-api-spec",
+	"module": "src/index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"prep": "bun src/index.ts prep",
+		"generate-patch": "bun src/index.ts generate-patch",
+		"generate-schema": "bun src/index.ts generate-schema",
+		"format": "bunx @biomejs/biome format --write --fix"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"json-with-bigint": "^3.4.4"
+	}
+}
